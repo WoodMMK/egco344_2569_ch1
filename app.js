@@ -11,6 +11,24 @@ const students = [
   { id: 5, name: 'Eve Adams', gpa: 3.5 }
 ];
 
+// Landing page with usage instructions
+app.get('/', (req, res) => {
+  res.send(`
+    <h1>Student GPA API</h1>
+    <p>Welcome to the Student GPA API. Available endpoints:</p>
+    <ul>
+      <li><strong>GET /students</strong> - Returns a JSON array of all students and their GPAs.</li>
+      <li><strong>GET /students/:id</strong> - Returns a JSON object for the student with the given <code>id</code>. Example: <code>/students/2</code></li>
+    </ul>
+    <p>Examples (when run locally):</p>
+    <ul>
+      <li>curl http://localhost:3000/students</li>
+      <li>curl http://localhost:3000/students/1</li>
+    </ul>
+    <p>Server runs on port ${port} by default. Start with: <code>node app.js</code></p>
+  `);
+});
+
 // Route to return all students' GPAs
 app.get('/students', (req, res) => {
   res.json(students);
