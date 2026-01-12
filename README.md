@@ -1,6 +1,6 @@
 # egco344_2569_ch1
 
-This repository is used for learning how to deploy a simple web application using **Render** (Platform as a Service – PaaS).
+This repository is used for learning how to deploy a simple web application using **Render**.
 
 ## 📌 Purpose
 - Practice basic web application setup
