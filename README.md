@@ -10,6 +10,7 @@ This repository is used for learning how to deploy a simple web application usin
 ## 🚀 Deployment
 The web application in this repository is deployed using [Render](https://render.com).  
 Any changes pushed to this repository can be automatically redeployed through Render.
+[view the app](https://egco344-2569-ch1-2h9g.onrender.com/) (service suspended for now)
 
 ## 📂 Project Structure
 This repository contains:
